@@ -11,7 +11,6 @@ class Spanner
         $str = ($str == '') ? ee()->TMPL->tagdata : $str;
 
         $replaced = preg_replace($expression, $replacement, $str);
-        $matched = preg_match($expression, $str, $matches);
 
         $this->return_data = $replaced;
     }
